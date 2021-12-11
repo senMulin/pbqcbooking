@@ -1,13 +1,11 @@
 # -*- coding: utf-8 -*-
-import os
-import time
-from concurrent.futures.thread import ThreadPoolExecutor
 
 import pandas as pd
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from splinter import Browser
 
-from core import user, helper
+from core import user
 from core.pdqcbookingstep import HandleChain
 
 windows_size = 1
@@ -25,12 +23,18 @@ def get_result(args):
 def initBrowser():
     try:
         retry = 2
-        browser = Browser('chrome')
+        chrome_options = Options()
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument('--disable-dev-shm-usage')
+        chrome_options.add_argument('--headless')
+
+        browser = Browser(driver_name='chrome', options=chrome_options)
         while --retry > 0:
             browser.visit(url)
             if url == browser.url:
                 return browser
 
+        # browser.quit()
         return None
     except BaseException as e:
         print("访问异常 %s" % e)
@@ -51,3 +55,5 @@ class hackPdqc(object):
         if browser is not None:
             chain = HandleChain(browser, users)
             chain.process()
+
+        browser.quit()

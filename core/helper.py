@@ -33,7 +33,6 @@ def create_task() -> str:
         taskId = result.get('taskId')
         if taskId is not None:
             return taskId
-        print(result)
 
     except Exception as e:
         print(e)
@@ -41,7 +40,7 @@ def create_task() -> str:
 
 def get_response(taskID: str):
     # 循环请求识别结果，3秒请求一次
-    print(f"taskId:{str}")
+    # print(f"taskId:{str}")
     times = 0
     while times < 120:
         try:
