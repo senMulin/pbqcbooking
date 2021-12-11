@@ -67,7 +67,7 @@ class User:
 
     @step_2_fdh_meal_preference.setter
     def step_2_fdh_meal_preference(self, value):
-        if meal_dic[value]:
+        if meal_dic.__contains__(value):
             self._step_2_fdh_meal_preference = meal_dic[value]
         else:
             self._step_2_fdh_meal_preference = 'No special preference'

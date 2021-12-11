@@ -1,4 +1,4 @@
-﻿身份證明文件號碼,外傭姓名,外傭飲食偏好,英語溝通,廣東話溝通,普通話溝通,聯絡人姓名,聯絡人電郵地址,聯絡人手提電話號碼,接收短訊通知的語言,接收短_通知的_言
+﻿身份證明文件類型,身份證明文件號碼,外傭姓名,外傭飲食偏好,英語溝通,廣東話溝通,普通話溝通,聯絡人姓名,聯絡人電郵地址,聯絡人手提電話號碼,接收短訊通知的語言
 Philippine Passport,P4764652B,TABAT MARIA CHRISTINE MOVERA,No special preference,yes,no,no,lee jing ting ,ss.shan@hotmail.com,57038315,中文
 Philippine Passport,P6086234B,IMPERIAL ZARINA DEL CASTILLO,No special preference,yes,no,no,lee jing ting ,ss.shan@hotmail.com,57038315,中文
 Philippine Passport,P5542660B,DELOS SANTOS RECHE DE VERA,No special preference,yes,no,no,lee jing ting ,ss.shan@hotmail.com,57038315,中文
@@ -32,8 +32,8 @@ Philippine Passport,P3160250A,Balansay Emelyn Cenena,No special preference,yes,n
 Philippine Passport,P9204175A,Bendanillo Mylene Carcer,No special preference,yes,no,no,mandy lee,mandylee99@kmailhkq.com,67087741,中文
 Philippine Passport,P0713517B,"Leona Oya, Sasa",No special preference,yes,no,no,mandy lee,mandylee99@kmailhkq.com,67087741,中文
 Philippine Passport,P3973927B,Dela Cruz Eryl,No special preference,yes,no,no,mandy lee,mandylee99@kmailhkq.com,67087741,中文
-Indonesian  Passport,C7259271,RETNO WULANSARI,Halal,yes,no,no,mandy lee,mandylee99@kmailhkq.com,67087741,中文
-Indonesian  Passport,C7257844,LO KIN CHING HELEN,Halal,yes,no,no,mandy lee,mandylee99@kmailhkq.com,67087741,中文
+Indonesian Passport,C7259271,RETNO WULANSARI,Halal,yes,no,no,mandy lee,mandylee99@kmailhkq.com,67087741,中文
+Indonesian Passport,C7257844,LO KIN CHING HELEN,Halal,yes,no,no,mandy lee,mandylee99@kmailhkq.com,67087741,中文
 Philippine Passport,P6321728B,DELA CRUZ JUVY BALBIDO,No special preference,yes,no,no,lam sze yan,yan8890@kmailhkq.com,57038315,中文
 Philippine Passport,P1379815B,RAZONADO LINDY EMBOL,No special preference,yes,no,no,lam sze yan,yan8890@kmailhkq.com,57038315,中文
 Philippine Passport,P3042696B,QUITALEG MARIA CECILIA ACOSTA,No special preference,yes,no,no,lam sze yan,yan8890@kmailhkq.com,57038315,中文
@@ -75,38 +75,38 @@ Philippine Passport,P4001404B ,AGGACID HANNA JOY MADRIAGA,No special preference,
 Philippine Passport,P6763655B,MUNAR SHAREN MAE RAMOS,No special preference,yes,no,no,kenlee,123jinglee@kmailhkq.com,59182082,中文
 Philippine Passport,P6167847B,LANSANG JENNY TAGALOG,No special preference,yes,no,no,kenlee,123jinglee@kmailhkq.com,59182082,中文
 Philippine Passport,P7248294A,FERNANDEZ SYLVIA PAGADUAN,No special preference,yes,no,no,kenlee,123jinglee@kmailhkq.com,59182082,中文
-Indonesian  Passport,C7771852,DANISAH,Halal,yes,no,no,kenlee,123jinglee@kmailhkq.com,59182082,中文
-Indonesian  Passport,AU622366,SITI PURWATI,Halal,yes,no,no,kenlee,123jinglee@kmailhkq.com,59182082,中文
-Indonesian  Passport,AU622362,ZAHROHTUL BAITY SYUFA,Halal,yes,no,no,kenlee,123jinglee@kmailhkq.com,59182082,中文
-Indonesian  Passport,C6842683,WIWIN,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,59182082,中文
-Indonesian  Passport,C6748502,PUJI ASTUTI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7771852,DANISAH,Halal,yes,no,no,kenlee,123jinglee@kmailhkq.com,59182082,中文
+Indonesian Passport,AU622366,SITI PURWATI,Halal,yes,no,no,kenlee,123jinglee@kmailhkq.com,59182082,中文
+Indonesian Passport,AU622362,ZAHROHTUL BAITY SYUFA,Halal,yes,no,no,kenlee,123jinglee@kmailhkq.com,59182082,中文
+Indonesian Passport,C6842683,WIWIN,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,59182082,中文
+Indonesian Passport,C6748502,PUJI ASTUTI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
 Philippine Passport,P9272362A,Tan Wilgen Moralla,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C2873249,Taryi Dulani Sapiyan,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C7253483,Tessri,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C2873249,Taryi Dulani Sapiyan,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7253483,Tessri,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
 Philippine Passport,P6635321A,Canones Ernie Octavio,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,c7849267,yeni wulandari,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,c7849267,yeni wulandari,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
 Philippine Passport,P1758025B,marabut mishel ingaran,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
 Philippine Passport,P5119833a,delos reyes charies paran,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
 Philippine Passport,P6347291b,alisna richie nunez,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,AT168443,masliah,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,AT168443,masliah,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
 Philippine Passport,P4972686B,singganon hellen patina,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
 Philippine Passport,P5984044A,mamon maricel roma,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,c7812247,lis handayani,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,c5039509,Sumaria,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Philippine,p9983246a,Duran Rowena Tagle,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C8278496,SELIA HELVI RIZANI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Philippine,P4161216B,Peralta Krizzia Joy Agbulos,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Philippine,P5525117B,"ASENTISTA, DIVA VALLENTE",No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C7540670,CICA ERNAWATI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C6834910,JUMAIYAH,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,B7586567,RIFATUL PUJI HERSANTI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C0673239,MASRUROH,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C6747627,KIKI FATMAWATI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C7257844,ELY ERNAWATI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C7259271,RETNO WULANSARI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C7258215,ELIPAH BT SUKADI MASRUH,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C7778705,PUJI ASTUTI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C7543593,SUMARTI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C7849010,OKAH SETIA NINGRUM,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C7540674,NUR AMALAH,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
-Indonesian  Passport,C7247171,TARMINAH,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,c7812247,lis handayani,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,c5039509,Sumaria,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Philippine Passport,p9983246a,Duran Rowena Tagle,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C8278496,SELIA HELVI RIZANI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Philippine Passport,P4161216B,Peralta Krizzia Joy Agbulos,No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Philippine Passport,P5525117B,"ASENTISTA, DIVA VALLENTE",No special preference,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7540670,CICA ERNAWATI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C6834910,JUMAIYAH,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,B7586567,RIFATUL PUJI HERSANTI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C0673239,MASRUROH,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C6747627,KIKI FATMAWATI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7257844,ELY ERNAWATI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7259271,RETNO WULANSARI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7258215,ELIPAH BT SUKADI MASRUH,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7778705,PUJI ASTUTI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7543593,SUMARTI,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7849010,OKAH SETIA NINGRUM,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7540674,NUR AMALAH,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文
+Indonesian Passport,C7247171,TARMINAH,Halal,yes,no,no,maggie yu,maggieeee@kmailhkq.com,52828274,中文

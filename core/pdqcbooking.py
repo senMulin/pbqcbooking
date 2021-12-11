@@ -24,9 +24,9 @@ def initBrowser():
     try:
         retry = 2
         chrome_options = Options()
-        chrome_options.add_argument('--no-sandbox')
-        chrome_options.add_argument('--disable-dev-shm-usage')
-        chrome_options.add_argument('--headless')
+        # chrome_options.add_argument('--no-sandbox')
+        # chrome_options.add_argument('--disable-dev-shm-usage')
+        # chrome_options.add_argument('--headless')
 
         browser = Browser(driver_name='chrome', options=chrome_options)
         while --retry > 0:
@@ -51,9 +51,9 @@ class hackPdqc(object):
             print("用户列表不存在")
             return
 
+        print("启动浏览器")
         browser = initBrowser()
         if browser is not None:
             chain = HandleChain(browser, users)
             chain.process()
-
         browser.quit()
