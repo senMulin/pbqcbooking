@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="zh-hk"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="zh-hk"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="zh-hk"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js lang-en" lang="zh-hk"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src https: * 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' data:">
+    <link rel="icon" href="/booking/assets/img/favicon.ico">
+    <meta name="referrer" content="strict-origin">
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta name="keywords" content=""/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="description" content=""/>
+    <title>外傭檢疫預約系統 - 開始預約</title>
+    <!--[if lt IE 9]>
+    <script src="assets/js/lib/html5shiv.js" type="text/javascript"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="/booking/assets/css/font-awesome.css">
+    <link rel="stylesheet" href="/booking/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/booking/assets/css/style.css">
+    <script type="text/javascript" src="/booking/assets/js/lib/default.js"></script>
+    <script type="text/javascript" src="/booking/assets/js/pureadjustclass.js"></script>
+    <script type="text/javascript" src="/booking/assets/js/purecookies.js"></script>
+    <script type="text/javascript" src="/booking/assets/js/preAAA.js"></script>
+
+    <script type="text/javascript" src="/booking/assets/js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="/booking/assets/js/lib/popper.min.js"></script>
+    <script type="text/javascript" src="/booking/assets/js/lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/booking/assets/js/lib/html2canvas.js"></script>
+    <script>
+  	
+	              	
+		var lang = "tc";
+	
+	
+
+    </script>
+</head>
+<body class="lang-tc">
+<div class="wrapper">
+    <a class="sr-only sr-only-focusable" id="skip-to-content" href="#skip-start">
+        跳至主要內容
+
+    </a>
+    <header class="page-head">
+        <div class="header__top">
+            <div class="container">
+                <div class="logo">
+                    <a href="/booking/index_hk_tc.jsp">
+                        <img src="/booking/assets/img/logo_tc.png" alt="香港特別行政區政府" height="80">
+                    </a>
+                </div>
+                <div class="head__top hidden-xs hidden-sm">
+                    <div class="head__block">
+                        <ul class="lang-list">
+
+
+                            <li><a href="index.jsp" class="lang">English</a></li>
+                            <li><a href="index_sc.jsp" class="lang">简</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="head__block">
+                        <ul class="fs-list">
+                            <li><a href="#!" class="text-l" alt="
+            較大字型
+            " title="
+            較大字型
+            ">A</a></li>
+                            <li><a href="#!" class="text-m" alt="
+            一般字型
+            " title="
+            一般字型
+            ">A</a></li>
+                            <li><a href="#!" class="text-s" alt="
+            較小字型
+            " title="
+            較小字型
+            ">A</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="mn__nav hidden-xs hidden-sm">
+                    <!-- ul class="mn__list--1">
+
+
+                                  <li class="mn__itm--1 has-sub">
+                                      <a href="video_tc.jsp" class="mn__link--1" target="_blank">示範影片</a>
+                                  </li>
+                                <li class="mn__itm--1 has-sub">
+                                      <a href="applicationstatus_tc.jsp" class="mn__link--1" target="_blank">查詢預約</a>
+                                  </li>
+
+
+                    </ul> -->
+                </nav>
+            </div>
+        </div>
+        <button class="mMenu__trigger visible-xs visible-sm"><span class="ico ico-bars" aria-hidden="true"></span><span
+                class="sr-only">
+      		
+            選單
+            </span></button>
+    </header>
+
+    <main>
+        <article class="inner">
+            <div class="container inner__content">
+                <a href="#!" id="skip-start">
+
+                    開始內容
+                </a>
+
+
+                <script src="https://www.recaptcha.net/recaptcha/enterprise.js?onload=onloadCallback&render=explicit&hl=zh-HK"
+                        async defer></script>
+                <script type="text/javascript" src="/booking/assets/js/lib/captcha.js"></script>
+                <div id="initial" class="gd2">
+                    <div class="col-sm-12 group_content hidden-print">
+                        <div class="reg_failed">
+
+
+                            <div class="reg_app" style="display: none;">
+                                <h1>因名額已滿，申請失敗。</h1>
+                            </div>
+                            <div class="reg_enquiry" style="display: none;">
+                                <h1 style="margin-top: 30px;">查詢失敗，原因可能是:</h1>
+                                <ul>
+                                    <li>輸入錯誤。</li>
+                                </ul>
+                            </div>
+                            <div class="reg_cancel" style="display: none;">
+                                <h1 style="margin-top: 30px;">取消預約失敗，原因可能是:</h1>
+                                <ul>
+                                    <li>預訂初步獲批 /已發出了繳款單 /已繳付了費用，請聯絡勞工處職員。</li>
+                                </ul>
+                            </div>
+                            <div class="align-right">
+                                <div class="input-submit-div">
+                                    <a href="javascript: location.reload();">返回</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="step_loading">
+
+
+                            <div class="col-sm-12 group_content" id="step_loading">
+                                <div class="text-center">
+                                    <i class="fa fa-spinner fa-pulse fa-4x fa-fw" aria-label="加載中"></i>
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step_cancel_booking">
+
+
+                            <h1>指定檢疫設施 - 竹篙灣檢疫中心 - 外傭檢疫預約系統</h1>
+                            <hr/>
+
+
+                            <form action="/booking/api_gd2" id="cancel_booking">
+                                <input type="hidden" id="cancel_booking_action" name="submit_action"
+                                       value="cancel_booking">
+                                <input type="hidden" id="cancel_booking_csrfToken" name="csrfToken" value="rhnjfitvdh">
+                                <div class="form-group row">
+                                    <label for="step_2_documentId" class="col-sm-4 col-form-label">外傭身份證明文件號碼:</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-divRead div-lg">
+                                            <input type="text" id="cancel_booking_documentId_display" maxlength="50"
+                                                   placeholder="Hong Kong Identity Card number of applicant"
+                                                   readonly="readonly">
+                                            <input type="hidden" id="cancel_booking_documentId"
+                                                   name="cancel_booking_documentId" maxlength="50"
+                                                   placeholder="Hong Kong Identity Card number of applicant"
+                                                   readonly="readonly">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr/>
+                                <div class="parent_today_cancel" style="display: none;">
+                                    <p style="margin-bottom: 30px; color: rgb(181, 81, 37);">
+                                        系統找到預約紀錄。
+                                    </p>
+                                    <div class="align-right">
+                                        <div class="input-submit-div">
+                                            <button class="cancel_reload_button">返回</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="parent_cancel">
+                                    <p style="margin-bottom: 30px; color: rgb(181, 81, 37);">
+                                        系統找到預約紀錄，你想取消預約嗎?
+                                    </p>
+                                    <div class="form-group row ">
+                                        <label for="cancel_booking_refno"
+                                               class="col-sm-4 col-form-label cancel_booking_refno"><span
+                                                class="highlightTxt">*</span>預約參考編號:</label>
+                                        <div class="col-sm-8">
+                                            <div class="input-div div-lg">
+                                                <input type="text" id="cancel_booking_refno" name="cancel_booking_refno"
+                                                       pattern="(([^()/><\]\[\\\x22,;|\{\}])*)?"
+                                                       placeholder="請輸入你想取消預約的預約參考編號" maxlength="50"
+                                                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                       required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row display dtl">
+                                        <label for="" class="col-sm-4 col-form-label">檢疫住宿的開始日期:</label>
+                                        <div class="col-sm-8">
+                                            <div class="input-div div-lg">
+                                                <input type="text" class="DEPART_DATE_PERIOD" name="" placeholder=""
+                                                       maxlength="50">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input_review_control">
+
+
+                                        <div class="form-group row cancel_booking_enquiry_captchaCode_row">
+                                            <label class="col-sm-4 col-form-label"></label>
+                                            <div class="col-sm-8">
+                                                <div id="cancel_booking_enquiry_captchaCode"></div>
+                                                <div class="validate_msg"
+                                                     id="cancel_booking_enquiry_captchaCode_validate_msg"></div>
+                                            </div>
+                                        </div>
+                                        <div class="align-right">
+                                            <div class="input-submit-div">
+                                                <button type="submit" id="cancel_booking_control_confirm">下一步</button>
+                                            </div>
+                                            <div class="input-submit-div">
+                                                <button class="cancel_reload_button">返回</button>
+                                            </div>
+
+                                            <div class="input-submit-div">
+                                                <button class="goto_step_2">開始新登記</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input_confirm_control" style="display: none;">
+
+
+                                        <div class="form-group row cancel_booking_captchaCode_row">
+                                            <label class="col-sm-4 col-form-label"></label>
+                                            <div class="col-sm-8">
+                                                <div id="cancel_booking_captchaCode"></div>
+                                                <div class="validate_msg"
+                                                     id="cancel_booking_captchaCode_validate_msg"></div>
+                                            </div>
+                                        </div>
+                                        <div id="cancel_booking_form_control" class="align-right">
+                                            <div class="input-submit-div">
+                                                <input type="submit" value="確認取消預約" alt="確認取消預約" title="確認取消預約">
+                                            </div>
+                                            <div class="input-submit-div">
+                                                <button type="reset" class="cancel_booking_cancel_button" alt="更改輸入的資料"
+                                                        title="更改輸入的資料">返回
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+
+                        </div>
+
+                        <div class="step_cancel_success">
+
+
+                            <h1>指定檢疫設施 - 竹篙灣檢疫中心 - 外傭檢疫預約系統</h1>
+                            <hr/>
+
+
+                            <p>
+                                你的預約已經取消。
+                            </p>
+                            <div class="align-right">
+                                <div class="input-submit-div">
+                                    <a href="javascript: location.reload();">返回</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="step_1">
+
+
+                            <h1>指定檢疫設施 - 竹篙灣檢疫中心 - 外傭檢疫預約系統</h1>
+                            <hr/>
+
+
+                            <form action="/booking/api_gd2" id="step_1_booking_form">
+                                <input type="hidden" id="step_1_form_name" name="step_1_form_name"
+                                       value="step_1_booking_form">
+                                <input type="hidden" id="step_1_action" name="submit_action" value="step_1">
+                                <input type="hidden" id="step_1_csrfToken" name="csrfToken" value="rhnjfitvdh">
+
+
+                                <div class="form-group row">
+                                    <label for="step_1_ATGC_NATCARDTYPE" class="col-sm-4 col-form-label"><span
+                                            class="highlightTxt">*</span>外傭身份證明文件類型：<br></label>
+                                    <div class="col-sm-8 display_flex">
+                                        <div>
+                                            <div>
+                                                <select id="step_1_ATGC_NATCARDTYPE" class="form-control"
+                                                        name="step_1_documentId_Type" style="min-width: 300px" required>
+                                                    <option disabled selected hidden value="">請選擇身份證明文件類型</option>
+                                                    <option value="Bangladeshi Passport" data-pattern=""
+                                                            data-max-length="20"
+                                                            data-depart-from="Bangladeshi"></option>
+                                                    <option value="Indian Passport" data-pattern="" data-max-length="20"
+                                                            data-depart-from="India"></option>
+                                                    <option value="Indonesian Passport" data-pattern=""
+                                                            data-max-length="8" data-depart-from="Indonesia"></option>
+                                                    <option value="Malaysian Passport" data-pattern=""
+                                                            data-max-length="20" data-depart-from="Malaysia"></option>
+                                                    <option value="Nepalese Passport" data-pattern=""
+                                                            data-max-length="20" data-depart-from="Nepalese"></option>
+                                                    <option value="Pakistani Passport" data-pattern=""
+                                                            data-max-length="20" data-depart-from="Pakistan"></option>
+                                                    <option value="Philippine Passport" data-pattern=""
+                                                            data-max-length="9" data-depart-from="Philippines"></option>
+                                                    <option value="Singaporean Passport" data-pattern=""
+                                                            data-max-length="20" data-depart-from="Singapore"></option>
+                                                    <option value="Thai Passport" data-pattern="" data-max-length="20"
+                                                            data-depart-from="Thailand"></option>
+                                                    <option value="United Arab Emirate Passport" data-pattern=""
+                                                            data-max-length="20"
+                                                            data-depart-from="UnitedArabEmirate"></option>
+                                                    <option value="Other Identity Documents" data-pattern=""
+                                                            data-max-length="20" data-depart-from="Other"></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="step_1_other_documentId" class="col-sm-4 col-form-label"><span
+                                            class="highlightTxt">*</span>外傭身份證明文件號碼：<br>（<span style="color: green">系統不接受輸入以下符號  " / \</span>）</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-div step_1_documentId_detail">
+					<span class="hk_id_input hide" style="display: flex;">
+						<label for="step_1_documentId_HKIC_prefix" class="invisible_label">身份證號碼不包括括號內的文字</label>
+						<input type="text" id="step_1_documentId_HKIC_prefix" value=""
+                               style="width: 180px; padding: 0px;" maxlength="8" pattern="[wxWX]{1,2}[0-9]+"
+                               placeholder="例如: W123456" onpaste="setTimeout(step_1_documentId_HKIC_prefix_paste, 10);"
+                               class="input-div">
+						<input type="text" maxlength="1" value="("
+                               style="background: white;width: 8px; padding: 0px; text-align: left;" class="input-div"
+                               readonly disabled>
+						<label for="step_1_documentId_HKIC_check_digit" class="invisible_label">身份證號碼括號內的文字</label>
+						<input type="text" id="step_1_documentId_HKIC_check_digit"
+                               style="width: 20px; text-align: center; padding: 0px;" value="" maxlength="1"
+                               pattern="[a-zA-Z0-9]" placeholder="7" class="input-div">
+						<input type="text" maxlength="1" value=")"
+                               style="background: white;width: 8px; padding: 0px; text-align: right;" class="input-div"
+                               readonly disabled>
+					</span>
+                                            <span class="ec_input hide">
+						<span class="e_Consent_serial">
+							<input type="text" class="input-div input_step_1_ec_documentId_serial_title" value="編號:"
+                                   maxlength="3" readonly disabled>
+							<input type="text" id="step_1_ec_documentId_serial" name="step_1_ec_documentId_serial"
+                                   class="input_step_1_ec_documentId_serial_no" value="" maxlength="6"
+                                   placeholder="000000">
+						</span>
+						<br>
+						<span class="e_Consent_ref input_border_top">
+							<input type="text" class="input-div input_step_1_ec_documentId_ref_title" value="檔案編號:"
+                                   maxlength="5" readonly disabled>
+							<input type="text" id="step_1_ec_documentId_ref_initial"
+                                   onkeypress="this.style.width = ((this.value.length + 1) * 1) + 'em';"
+                                   class="input_step_1_ec_documentId_ref_initial" value="" maxlength="4"
+                                   pattern="[A-Z]{4}" placeholder="AAAA">
+							<input type="text" class="input-div input_step_1_ec_documentId_ref_hyphen" value="-"
+                                   maxlength="1" readonly disabled>
+							<input type="text" id="step_1_ec_documentId_ref_first"
+                                   class="input-div input_step_1_ec_documentId_ref_first" value="" maxlength="7"
+                                   pattern="[0-9]{7}" placeholder="0000000">
+							<input type="text" class="input-div input_step_1_ec_documentId_ref_hyphen" value="-"
+                                   maxlength="1" readonly disabled>
+							<input type="text" id="step_1_ec_documentId_ref_second"
+                                   class="input-div input_step_1_ec_documentId_ref_second" value="" maxlength="2"
+                                   pattern="[0-9]{2}" placeholder="00">
+							<input type="text" class="input-div input_step_1_ec_documentId_ref_Obracket" value="("
+                                   maxlength="1" readonly disabled>
+							<input type="text" id="step_1_ec_documentId_ref_digit"
+                                   class="input-div input_step_1_ec_documentId_ref_digit" value="" maxlength="1"
+                                   pattern="[a-zA-Z0-9]" placeholder="0">
+							<input type="text" class="input-div input_step_1_ec_documentId_ref_Cbracket" value=")"
+                                   maxlength="1" readonly disabled>
+						</span>
+					</span>
+                                            <span class="other_id_input">
+						<input type="text" id="step_1_other_documentId" value="" style="padding: 0px;" maxlength="20"
+                               placeholder="例如: W123456" required>
+					</span>
+                                            <input type="hidden" id="step_1_documentId_HKIC" value="" maxlength="50"
+                                                   name="step_1_documentId" pattern="">
+                                        </div>
+                                        <div class="validate_msg" id="step_1_validate_msg"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row step_1_passcode_row" style="display: none">
+                                    <label for="step_1_passcode" class="col-sm-4 col-form-label"><span
+                                            class="highlightTxt">*</span>請輸入自訂查詢預約密碼:</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-div">
+                                            <input type="password" style="-webkit-text-security: disc;"
+                                                   id="step_1_passcode" autocomplete="off" maxlength="50"
+                                                   name="step_1_passcode" placeholder="請輸入自訂查詢預約密碼" class="input-div">
+                                        </div>
+                                        <div class="validate_msg" id="step_1_passcode_validate_msg"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row step_1_captchaCode_row">
+                                    <label class="col-sm-4 col-form-label"></label>
+                                    <div class="col-sm-8">
+                                        <div id="step_1_captchaCode"></div>
+                                        <div class="validate_msg" id="step_1_captchaCode_validate_msg"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="align-right">
+                                    <div class="input-submit-div">
+                                        <input type="submit" value="下一步" alt="下一步" title="下一步">
+                                    </div>
+                                    <div class="input-submit-div">
+                                        <a href="./index_tc.jsp" alt="取消輸入的資料" title="取消輸入的資料">取消</a>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                        <div class="note_2">
+
+
+                            <div class="form-group pics_">
+                                <h1>收集個人資料聲明</h1>
+                                <h2>我們如何使用於本預約系統收集的個人資料</h2>
+                                <ol>
+                                    <li>勞工處將出於以下目的，使用此預約系統中收集到的個人資料：
+                                        <ul>
+                                            <li>
+                                                處理指定檢疫設施的房間預約申請，以及處理與申請相關的查詢；
+                                            </li>
+                                            <li>查核指定檢疫設施的房間預約名額；及</li>
+                                            <li>製備統計數字及進行分析，而所獲得的統計資料將不會以能識別各有關資料當事人或其中任何人的身份的形式提供給第三方。</li>
+                                        </ul>
+                                    </li>
+                                    <li>申請人提供個人資料純屬自願。但如果申請人不提供所須的個人資料，勞工處將無法處理相關申請，同時申請人亦不會獲得房間預約確認。</li>
+                                    <li>
+                                        勞工處須根據政府既定資訊保安要求，安全地持有個人資料。勞工處將採取合適的技術性與機構行政措施，例如資料加密、接達控制及防火牆等，以保障個人資料不受未獲准許的或意外的查閱、處理、刪除、喪失或使用。
+                                    </li>
+                                    <h2>傳送和/或資料披露</h2>
+                                    <li>勞工處不會將市民於申請時輸入的個人資料，用於任何其他用途。勞工處亦會確保個人資料的保存期限，不會超過為達致原來目的實際所需。</li>
+                                    <li>
+                                        基於上文第1項所述的目的，或在法律授權或要求披露的情況下，此申請中的個人資料可能會被轉交香港特區政府有關政策局或部門，包括負責出入境和公共衞生事宜的相關政府部門及機構，作為出入境管制及保障公共衞生用途。
+                                    </li>
+                                    <h2>查閱資料要求</h2>
+                                    <li>
+                                        <ol style="list-style: lower-roman;">
+                                            <li>根據《個人資料（私隱）條例》（香港法例第486章）（「本條例」），除一些豁免情況外，你有權要求存取及更改你於此申請中提供的個人資料；</li>
+                                            <li>在本條例第20條指定的情況下，我們可以拒絕查閱資料要求；</li>
+                                            <li>你可透過以下其中一種方式提出要求或查詢:(a) 電郵至<a href="mailto:fdh-enquiry@labour.gov.hk">fdh-enquiry@labour.gov.hk</a>；(b)
+                                                傳真至3101 0604；或(c) 郵寄至九龍旺角道1號旺角道壹號商業中心16樓勞工處外籍家庭傭工科。
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                                <p class="p_underline">同意</p>
+                                <span>本人 -</span><br>
+                                <ul>
+                                    <li>
+                                        已閱讀並理解上文收集個人資料聲明內容，並同意勞工處可以處理指定檢疫設施的房間預約申請為目的，處理和使用此申請中提供的個人資料；並向與申請相關的政府政策局或部門披露此申請中提供的個人資料；
+                                    </li>
+                                    <li>同意將此申請中的個人資料轉交香港特區政府有關政策局或部門，包括負責出入境及公共衞生事宜的相關政府部門及機構，作為出入境管制及保障公共衞生用途；</li>
+                                    <li>明白勞工處將保留對審核任何申請的權利，如果發現申請人提供的資料無效、錯誤或有遺漏，勞工處可以在有需要時拒絕任何申請；及</li>
+                                    <li>明白如任何人士協助他人申請，必須先取得相關人士同意，方可使用其個人資料進行有關申請。</li>
+                                </ul>
+                                <br>
+                                <div class="ckbox_wrapper">
+                                    <input id="pics_consent" name="pics_consent" type="checkbox" value="html-markup"
+                                           alt="請勾選同意以上條款並繼續" title="請勾選同意以上條款並繼續">
+                                    <label for="pics_consent">本人已閱讀並同意上述條款。</label>
+                                </div>
+                                <div class="validate_msg" id="pics_consent_validate_msg"></div>
+                                <div class="ckbox_wrapper">
+                                    <input id="nr_consent" name="nr_consent" type="checkbox" value="html-markup"
+                                           alt="請勾選本人已閱讀及完全明白「預約須知」並同意受其約束。" title="請勾選本人已閱讀及完全明白「預約須知」並同意受其約束。">
+                                    <label for="nr_consent">本人已閱讀及完全明白「預約須知」並同意受其約束。</label>
+                                </div>
+                                <div class="validate_msg" id="nr_consent_validate_msg"></div>
+                                <div class="ckbox_wrapper">
+                                    <input id="gr_consent" name="gr_consent" type="checkbox" value="html-markup"
+                                           alt="請勾選本人已閱讀及完全明白並同意受其約束。" title="請勾選本人已閱讀及完全明白並同意受其約束。">
+                                    <label for="gr_consent">本人明白本人代表一名外傭（該人士）作出／處理及／或查閱其於本設施的預約。本人已得到該人士允許使用及提供其個人資料及／或預約資料作上述用途。本人同意不會將該人士的個人資料及／或預約資料作任何未經授權的用途。</label>
+                                </div>
+                                <div class="validate_msg" id="gr_consent_validate_msg"></div>
+                            </div>
+                            <div class="align-right">
+                                <div class="input-submit-div">
+                                    <input type="submit" value="下一頁" id="note_2_confirm" alt="下一頁" title="下一頁">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="step_2">
+
+
+                            <h1>指定檢疫設施 - 竹篙灣檢疫中心 - 外傭檢疫預約系統</h1>
+                            <hr/>
+
+
+                            <form action="/booking/api_gd2" id="step_2_booking_form">
+                                <input type="hidden" id="step_2_action" name="submit_action" value="step_2">
+                                <input type="hidden" id="step_2_CBSP_ID" name="step_2_CBSP_ID" value="">
+                                <input type="hidden" id="step_2_CBSP_LOCATION" name="step_2_CBSP_LOCATION" value="">
+                                <input type="hidden" id="step_2_DEPART_DATE" name="step_2_DEPART_DATE" value="">
+                                <input type="hidden" id="step_2_DEPART_END_DATE" name="step_2_DEPART_END_DATE" value="">
+                                <input type="hidden" id="step_2_csrfToken" name="csrfToken" value="rhnjfitvdh">
+                                <div id="step_2_input_page">
+
+
+                                    <div class="form-group row">
+                                        <label for="step_2_documentType"
+                                               class="col-sm-4 col-form-label">外傭身份證明文件類型:</label>
+                                        <div class="col-sm-8">
+                                            <div class="input-divRead div-lg">
+                                                <input type="text" id="step_2_document_type_display"
+                                                       name="step_2_document_type_display" maxlength="50" placeholder=""
+                                                       readonly="readonly">
+                                                <input type="hidden" id="step_2_document_type"
+                                                       name="step_2_document_type">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="step_2_documentId"
+                                               class="col-sm-4 col-form-label">外傭身份證明文件號碼:</label>
+                                        <div class="col-sm-8">
+                                            <div class="input-divRead">
+                                                <input type="text" id="step_2_documentId_display" maxlength="50"
+                                                       placeholder="" readonly="readonly">
+                                                <input type="hidden" id="step_2_documentId" name="step_2_documentId"
+                                                       maxlength="50" placeholder="" readonly="readonly">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <hr/>
+
+
+                                    <div class="form-group row applicant_error_msg" id="main_applicant_error_msg">
+                                        <label class="col-sm-4 col-form-label"><span class="highlightTxt">外佣資料不正確</span></label>
+                                    </div>
+
+
+                                    <div class="step_2_passport_info">
+
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label"></label>
+                                            <div class="col-sm-8">
+                                                <label style="margin-bottom: 0px">（<span style="color: green">請在30分鐘逾時前提交此表格。</span>）<br/>（<span
+                                                        style="color: green">系統不接受輸入以下符號  " / \</span>）<br/><span
+                                                        class="highlightTxt">*必須填寫</span></label>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row step_2_fullname">
+                                            <label class="col-sm-4 col-form-label" for="step_2_fdh_name"><span
+                                                    class="highlightTxt">*</span>外傭姓名：</label>
+                                            <div class="col-sm-8">
+                                                <div class="step_2_fdh_name">
+                                                    <div class="input-div">
+                                                        <input type="text" id="step_2_fdh_name" name="step_2_fdh_name"
+                                                               maxlength="100" pattern="[^0-9\x22\\\/]*"
+                                                               oninvalid="$('#step_2_fdh_name_validate_msg').show();"
+                                                               placeholder="外傭姓名：" aria-lable="外傭姓名：" required>
+                                                    </div>
+                                                </div>
+                                                <div class="validate_msg" id="step_2_fdh_name_validate_msg"
+                                                     style="display: none;">外傭姓名不接受數字。
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row step_2_fdh_mobile">
+                                            <label class="col-sm-4 col-form-label" for="step_2_fdh_mobile">外傭手提電話號碼（如適用）：</label>
+                                            <div class="col-sm-8">
+                                                <div class="step_2_fdh_name">
+                                                    <div class="input-div">
+                                                        <input type="text" id="step_2_fdh_mobile"
+                                                               name="step_2_fdh_mobile" maxlength="45"
+                                                               pattern="[^\x22\\\/]*" placeholder="外傭手提電話號碼（如適用）："
+                                                               aria-lable="外傭手提電話號碼（如適用）："
+                                                               onblur="if(this.value!=''){$('.step_2_communicate_in_whatsapp').show();$('input[name=step_2_communicate_in_whatsapp]').prop('checked', false);}else{$('.step_2_communicate_in_whatsapp').hide();$('input[name=step_2_communicate_in_whatsapp]').prop('checked', false);$('input[name=step_2_communicate_in_whatsapp][value=No]').click();}">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row step_2_communicate_in_whatsapp"
+                                             style="display: none;">
+                                            <label for="step_2_communicate_in_whatsapp" class="col-sm-4 col-form-label"><span
+                                                    class="highlightTxt">*</span><span class="step2_form_label">外傭手提電話號碼能接收WhatsApp訊息：</span><span
+                                                    class="step2_form_review_label">外傭手提電話號碼能接收WhatsApp訊息：</span></label>
+                                            <div class="col-sm-8">
+                                                <div class="radio_group_parent">
+                                                    <div class="radio_group">
+                                                        <input type="radio" id="step_2_communicate_in_whatsapp_yes"
+                                                               name="step_2_communicate_in_whatsapp" value="Yes"
+                                                               style="min-height: initial;" required>
+                                                        <label for="step_2_communicate_in_whatsapp_yes">是</label>
+                                                        <label for="step_2_communicate_in_whatsapp_yes"
+                                                               class="invisible_label">外傭手提電話號碼能接收WhatsApp訊息：, 是,
+                                                            unchecked</label>
+                                                    </div>
+                                                    <div class="radio_group">
+                                                        <input type="radio" id="step_2_communicate_in_whatsapp_no"
+                                                               name="step_2_communicate_in_whatsapp" value="No"
+                                                               style="min-height: initial;" checked>
+                                                        <label for="step_2_communicate_in_whatsapp_no">否</label>
+                                                        <label for="step_2_communicate_in_whatsapp_no"
+                                                               class="invisible_label">外傭手提電話號碼能接收WhatsApp訊息：, 否,
+                                                            unchecked</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row step_2_fdh_meal_preference">
+                                            <label class="col-sm-4 col-form-label"
+                                                   for="step_2_fdh_meal_preference"><span class="highlightTxt">*</span>外傭飲食偏好：</label>
+                                            <div class="col-sm-8">
+                                                <div class="step_2_fdh_name">
+                                                    <div class="input-div">
+                                                        <select id="step_2_fdh_meal_preference" class="form-control"
+                                                                name="step_2_fdh_meal_preference"
+                                                                style="min-width: 300px" required>
+                                                            <option disabled selected hidden value="">請選擇外傭飲食偏好</option>
+                                                            <option value="Chinese">中餐</option>
+                                                            <option value="Western">西餐</option>
+                                                            <option value="Vegetarian">素食餐</option>
+                                                            <option value="Low-sugar and salt">低糖低鹽餐</option>
+                                                            <option value="Halal">清真餐</option>
+                                                            <option value="Indian">印度餐</option>
+                                                            <option value="Diabetic">糖尿病餐</option>
+                                                            <option value="Gluten-Friendly">麩質特製餐</option>
+                                                            <option value="No special preference">無特別偏好</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row step_2_communicate_in_english">
+                                            <label for="step_2_communicate_in_english"
+                                                   class="col-sm-4 col-form-label"><span
+                                                    class="highlightTxt">*</span><span class="step2_form_label">外傭能以英語溝通：</span><span
+                                                    class="step2_form_review_label">外傭能以英語溝通：</span></label>
+                                            <div class="col-sm-8">
+                                                <div class="radio_group_parent">
+                                                    <div class="radio_group">
+                                                        <input type="radio" id="step_2_communicate_in_english_yes"
+                                                               name="step_2_communicate_in_english" value="Yes"
+                                                               style="min-height: initial;" required>
+                                                        <label for="step_2_communicate_in_english_yes">是</label>
+                                                        <label for="step_2_communicate_in_english_yes"
+                                                               class="invisible_label">外傭能以英語溝通：, 是, unchecked</label>
+                                                    </div>
+                                                    <div class="radio_group">
+                                                        <input type="radio" id="step_2_communicate_in_english_no"
+                                                               name="step_2_communicate_in_english" value="No"
+                                                               style="min-height: initial;">
+                                                        <label for="step_2_communicate_in_english_no">否</label>
+                                                        <label for="step_2_communicate_in_english_no"
+                                                               class="invisible_label">外傭能以英語溝通：, 否, unchecked</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row step_2_communicate_in_cantonese">
+                                            <label for="step_2_communicate_in_cantonese"
+                                                   class="col-sm-4 col-form-label"><span
+                                                    class="highlightTxt">*</span><span class="step2_form_label">外傭能以廣東話溝通：</span><span
+                                                    class="step2_form_review_label">外傭能以廣東話溝通：</span></label>
+                                            <div class="col-sm-8">
+                                                <div class="radio_group_parent">
+                                                    <div class="radio_group">
+                                                        <input type="radio" id="step_2_communicate_in_cantonese_yes"
+                                                               name="step_2_communicate_in_cantonese" value="Yes"
+                                                               style="min-height: initial;" required>
+                                                        <label for="step_2_communicate_in_cantonese_yes">是</label>
+                                                        <label for="step_2_communicate_in_cantonese_yes"
+                                                               class="invisible_label">外傭能以廣東話溝通：, 是, unchecked</label>
+                                                    </div>
+                                                    <div class="radio_group">
+                                                        <input type="radio" id="step_2_communicate_in_cantonese_no"
+                                                               name="step_2_communicate_in_cantonese" value="No"
+                                                               style="min-height: initial;">
+                                                        <label for="step_2_communicate_in_cantonese_no">否</label>
+                                                        <label for="step_2_communicate_in_cantonese_no"
+                                                               class="invisible_label">外傭能以廣東話溝通：, 否, unchecked</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row step_2_communicate_in_putonghua">
+                                            <label for="step_2_communicate_in_putonghua"
+                                                   class="col-sm-4 col-form-label"><span
+                                                    class="highlightTxt">*</span><span class="step2_form_label">外傭能以普通話溝通：</span><span
+                                                    class="step2_form_review_label">外傭能以普通話溝通：</span></label>
+                                            <div class="col-sm-8">
+                                                <div class="radio_group_parent">
+                                                    <div class="radio_group">
+                                                        <input type="radio" id="step_2_communicate_in_putonghua_yes"
+                                                               name="step_2_communicate_in_putonghua" value="Yes"
+                                                               style="min-height: initial;" required>
+                                                        <label for="step_2_communicate_in_putonghua_yes">是</label>
+                                                        <label for="step_2_communicate_in_putonghua_yes"
+                                                               class="invisible_label">外傭能以普通話溝通：, 是, unchecked</label>
+                                                    </div>
+                                                    <div class="radio_group">
+                                                        <input type="radio" id="step_2_communicate_in_putonghua_no"
+                                                               name="step_2_communicate_in_putonghua" value="No"
+                                                               style="min-height: initial;">
+                                                        <label for="step_2_communicate_in_putonghua_no">否</label>
+                                                        <label for="step_2_communicate_in_putonghua_no"
+                                                               class="invisible_label">外傭能以普通話溝通：, 否, unchecked</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label"><span class="highlightTxt">*</span>聯絡人姓名：</label>
+                                            <div class="col-sm-8">
+                                                <div class="step_2_name_of_contact_person">
+                                                    <div class="input-div">
+                                                        <input type="text" id="step_2_name_of_contact_person"
+                                                               name="step_2_name_of_contact_person"
+                                                               pattern="[^\x22\\\/]*" maxlength="100"
+                                                               placeholder="聯絡人姓名：" aria-lable="聯絡人姓名：" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label"><span class="highlightTxt">*</span>聯絡人電郵地址：</label>
+                                            <div class="col-sm-8">
+                                                <div class="step_2_email_of_contact_person">
+                                                    <div class="input-div">
+                                                        <input type="email" id="step_2_email_of_contact_person"
+                                                               name="step_2_email_of_contact_person" maxlength="100"
+                                                               placeholder="聯絡人電郵地址：" aria-lable="聯絡人電郵地址：" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-4 col-form-label">職業介紹所名稱（如適用）：</label>
+                                            <div class="col-sm-8">
+                                                <div class="step_2_name_of_employment_agency">
+                                                    <div class="input-div">
+                                                        <input type="text" id="step_2_name_of_employment_agency"
+                                                               name="step_2_name_of_employment_agency"
+                                                               pattern="[^\x22\\\/]*" maxlength="100"
+                                                               placeholder="職業介紹所名稱（如適用）：" aria-lable="職業介紹所名稱（如適用）：">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row step_2_entrance_port">
+                                        <label for="step_2_entrance_port" class="col-sm-4 col-form-label"><span
+                                                class="step2_form_label"><span
+                                                class="highlightTxt">*</span>請選擇指定檢疫設施:</span><span
+                                                class="step2_form_review_label"><span class="highlightTxt">*</span>指定檢疫設施:</span></label>
+                                        <div class="col-sm-8">
+                                            <div class="radio_group_parent step_2_entrance_port_radio_group">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row step_2_departure_from hide">
+                                        <label for="step_2_departure_from" class="col-sm-4 col-form-label"><span
+                                                class="highlightTxt">*</span>出發地:</label>
+                                        <div class="col-sm-8">
+                                            <div class="input-div">
+                                                <select id="step_2_departure_from" class="form-control"
+                                                        name="step_2_departure_from">
+                                                    <option disabled selected hidden value="">請選擇出發地</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row ">
+                                        <label for="step_2_CBP_ID" class="col-sm-4 col-form-label"><span
+                                                class="step2_form_label"><span
+                                                class="highlightTxt">*</span>強制檢疫開始日期：</span><span
+                                                class="step2_form_review_label"><span class="highlightTxt">*</span>強制檢疫開始日期：</span></label>
+                                        <div class="col-sm-8">
+                                            <div class="booking_selection">
+                                                <div class="booking_dates radio_group_parent">
+                                                </div>
+                                            </div>
+                                            <div class="validate_msg" id="step_2_avalible_booking_validate_msg"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row ">
+                                        <label class="col-sm-4 col-form-label"><span
+                                                class="step2_form_label">強制檢疫結束日期：</span><span
+                                                class="step2_form_review_label">強制檢疫結束日期：</span></label>
+                                        <div class="col-sm-8 ">
+                                            <div class="input-div" style="background: transparent; border: none;">
+                                                <input type="text" class="accommodation_end_date" readonly="readonly"
+                                                       style="color: blue; background: transparent; padding: 0px;">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <hr/>
+
+
+                                    <div class="form-group row">
+                                        <label for="step_2_tel_for_sms_notif" class="col-sm-4 col-form-label"><span
+                                                class="highlightTxt">*</span>聯絡人手提電話號碼（接收短訊之用）</label>
+                                        <div class="col-sm-8 display_flex sms_flex sms_align_center" style="">
+                                            <span class="sms_span">+</span>
+                                            <div class="input-div" style="margin-right: 10px;">
+                                                <select id="step_2_tel_for_sms_verification_area_code"
+                                                        name="step_2_tel_for_sms_verification_area_code"
+                                                        style="min-width: 120px; min-height: 2rem;" required>
+                                                    <!--<option disabled hidden value="">請選擇</option>-->
+                                                    <option value="852" selected>852 (中國香港)</option>
+                                                </select>
+                                            </div>
+                                            <span class="sms_span">-</span>
+                                            <div class="input-div" style="margin-left: 10px;">
+                                                <input type="tel" id="step_2_tel_for_sms_notif"
+                                                       name="step_2_tel_for_sms_notif" pattern="[0-9]{0,11}"
+                                                       placeholder="請輸入可接收SMS短訊通知的聯絡電話號碼" minlength="5" maxlength="20"
+                                                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                       title="聯絡人手提電話號碼（接收短訊之用）" required>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row step_2_tel_for_sms_notif step2_form_label">
+                                        <label for="step_2_tel_for_sms_notif" class="col-sm-4 col-form-label"><span
+                                                class="highlightTxt">*</span>請再次輸入聯絡人手提電話號碼（接收短訊之用）</label>
+                                        <div class="col-sm-8 display_flex"
+                                             style="flex-flow: wrap; align-items: center;">
+                                            <span class="sms_span">+</span>
+                                            <div class="input-div" style="margin-right: 10px;">
+                                                <select id="step_2_tel_for_sms_verification_area_code_confirm"
+                                                        name="step_2_tel_for_sms_verification_area_code_confirm"
+                                                        style="min-width: 120px; min-height: 2rem;" required>
+                                                    <!--<option disabled selected hidden value="">請選擇</option>-->
+                                                    <option value="852" selected>852 (中國香港)</option>
+                                                </select>
+                                            </div>
+                                            <span class="sms_span">-</span>
+                                            <div class="input-div" style="margin-left: 10px;">
+                                                <input type="tel" id="step_2_tel_for_sms_notif_confirm"
+                                                       name="step_2_tel_for_sms_notif_confirm" pattern="[0-9]{0,11}"
+                                                       placeholder="請再次輸入可接收SMS短訊通知的聯絡電話號碼:" minlength="5"
+                                                       maxlength="20"
+                                                       oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                                                       title="請再次輸入聯絡人手提電話號碼（接收短訊之用）" required>
+                                            </div>
+                                            <div style="flex-basis: 100%; height: 0;"></div>
+                                            <div class="validate_msg"
+                                                 id="step_2_tel_for_sms_notif_confirm_validate_msg"></div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group row step_2_language_preference">
+                                        <label for="step_2_language_preference" class="col-sm-4 col-form-label"><span
+                                                class="step2_form_label">接收短訊通知的語言:</span><span
+                                                class="step2_form_review_label">接收短訊通知的語言:</span></label>
+                                        <div class="col-sm-8">
+                                            <div class="radio_group_parent">
+                                                <div class="radio_group">
+                                                    <input type="radio" id="step_2_language_preference_chinese"
+                                                           name="step_2_language_preference" value="Chinese"
+                                                           style="min-height: initial;" checked>
+                                                    <label for="step_2_language_preference_chinese">中文</label>
+                                                    <label for="step_2_language_preference_chinese"
+                                                           class="invisible_label">接收短訊通知的語言, 中文, checked</label>
+                                                </div>
+                                                <div class="radio_group">
+                                                    <input type="radio" id="step_2_language_preference_english"
+                                                           name="step_2_language_preference" value="English"
+                                                           style="min-height: initial;">
+                                                    <label for="step_2_language_preference_english">英文</label>
+                                                    <label for="step_2_language_preference_english"
+                                                           class="invisible_label">接收短訊通知的語言, 英文, unchecked</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="input_review_control">
+                                        <div class="align-right">
+                                            <div class="input-submit-div" id="step_2_form_control_confirm_div">
+                                                <button type="submit" id="step_2_form_control_confirm" alt="下一步"
+                                                        title="下一步">下一步
+                                                </button>
+                                            </div>
+                                            <div class="input-submit-div">
+                                                <button type="reset" class="cancel_reload_button" alt="取消" title="取消">
+                                                    取消
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="input_confirm_control" style="display: none;">
+
+
+                                        <p id="user_note" class="highlight_red">
+                                            請注意，入住指定檢疫設施日期不可更改。請核實你以上所提交的資料，資料一經提交，不可更改。如所輸入的資料有錯誤或不真確，本處可拒絕你的申請。
+                                            <br/>
+                                            <br/>
+                                            你在本表格提供的資料及個人資料，即姓名、身份證明文件號碼及聯絡電話號碼，會用作登記及／或處理預約，並會提前轉交負責公共衞生的相關政府部門作保障公共衞生的用途。
+                                            <br/>&nbsp;<br/>
+                                        </p>
+
+
+                                        <div class="form-group row step_2_captchaCode_row">
+                                            <label class="col-sm-4 col-form-label"></label>
+                                            <div class="col-sm-8">
+                                                <div id="step_2_captchaCode"></div>
+                                                <div class="validate_msg" id="step_2_captchaCode_validate_msg"></div>
+                                            </div>
+                                        </div>
+
+
+                                        <div id="step_2_form_control" class="align-right">
+                                            <div class="input-submit-div">
+                                                <input type="submit" value="確認" alt="確認輸入的資料" title="確認輸入的資料">
+                                            </div>
+                                            <div class="input-submit-div">
+                                                <button type="reset" class="step_2_cancel_button" alt="更改輸入的資料"
+                                                        title="更改輸入的資料">更改
+                                                </button>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 group_content booking_result print_area" id="booking_result">
+                        <div class="result_area">
+
+
+                            <h1>指定檢疫設施 - 竹篙灣檢疫中心 - 外傭檢疫預約系統</h1>
+                            <hr/>
+
+
+                            <div class="">
+
+
+                                <p style="background-color: #FCD4CC; padding: 10px;border: 1px solid;">
+                                    此頁面<span class="bold_underline">並非</span>指定檢疫設施預訂房間確認書，外籍家庭傭工不可以此頁面作為憑證以訂購機票或登機來港。
+                                </p>
+                                <p>
+                                    閣下已成功提交預約申請，申請編號為(<span class="REF_NO ATH_REF_NO bold_underline"></span>)。我們已經發出確認短訊至你所提供的手提電話號碼。
+                                </p>
+                                <p>
+                                    <span class="highlight_red">請留意，成功提交申請不表示申請人已成功預訂房間。</span>勞工處將於一至兩天內跟進你的預約申請。
+                                </p>
+                                <p>
+                                    如欲查詢或取消你的預約，請電郵至 <a href="mailto:dqf@labour.gov.hk">dqf@labour.gov.hk</a>. 聯絡勞工處。
+                                </p>
+                                <p id="confirm_notes"></p>
+
+
+                                <hr/>
+                            </div>
+                            <div class="center-box">
+                                <div class="text-center success_text">
+                                    <h2 class="underline">
+
+                                        預約申請資料
+
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    參考編號：
+
+                                </div>
+                                <div class="success_value"><span class="REF_NO ATH_REF_NO"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    強制檢疫的開始日期：
+
+                                </div>
+                                <div class="success_value"><span class="ATH_DEPART_DATE_PERIOD"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    強制檢疫的結束日期：
+
+                                </div>
+                                <div class="success_value"><span class="ATH_DEPART_END_DATE_PERIOD"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    指定檢疫設施：
+
+                                </div>
+                                <div class="success_value"><span class="ATH_CCP_NAME"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    外傭姓名：
+                                </div>
+                                <div class="success_value"><span class="ATH_FDH_NAME"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    外傭能以英語溝通：
+                                </div>
+                                <div class="success_value"><span class="ATH_FDH_COMM_ENG"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    外傭身份證明文件類型：
+
+                                </div>
+                                <div class="success_value"><span class="ATH_NATCARDTYPE"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    外傭身份證明文件號碼：
+
+                                </div>
+                                <div class="success_value"><span class="ATH_NATCARDID"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    聯絡人姓名：
+
+                                </div>
+                                <div class="success_value"><span class="ATH_NAME_CONTACT_PERSON"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    聯絡人電郵地址：
+
+                                </div>
+                                <div class="success_value"><span class="ATH_EMAIL_CONTACT_PERSON"></span></div>
+                            </div>
+                            <div class="flex-center hide">
+                                <div class="success_title">
+
+                                    職業介紹所名稱：
+
+                                </div>
+                                <div class="success_value"><span class="ATH_NAME_EMPLOYMENT_AGENCY"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_title">
+
+                                    可接收短訊通知的聯絡電話號碼：
+
+                                </div>
+                                <div class="success_value"><span class="ATH_TEL_FOR_SMS_NOTIF"></span></div>
+                            </div>
+                            <div class="highlight_red"
+                                 style="font-weight: bold; width: 100%; text-align: center; margin-bottom: 1em;">
+
+                                *請記下參考編號，以便日後查詢或取消預約。你可使用頁底的按鈕儲存和列印本頁作紀錄。
+
+                            </div>
+                        </div>
+
+
+                        <div class="align-right" id="result_button_group">
+                            <div class="input-submit-div" style="width:150px; display: none;">
+                                <button class="go_cancel" id="go_cancel" alt="
+	            取消成功預約的申請
+	            " title="
+	            取消成功預約的申請
+	            ">
+
+                                    取消預約
+                                </button>
+                            </div>
+                            <div class="input-submit-div" style="width:150px;">
+                                <button onclick="download_text('.result_area');" alt="
+	            儲存預約資料至純文字檔案
+	            " title="
+	            儲存預約資料至純文字檔案
+	            ">
+
+                                    儲存文字版本
+
+                                </button>
+                            </div>
+                            <div class="input-submit-div" style="width:150px;">
+                                <button class="btnScreenShot" id="btnScreenShot" alt="
+	            儲存預約資料至圖像檔案
+	            " title="
+	            儲存預約資料至圖像檔案
+	            ">
+
+                                    儲存圖像
+                                </button>
+                            </div>
+                            <div class="input-submit-div">
+                                <button class="print hidden-print" alt="
+				
+	            列印預約資料
+	            " title="
+				
+	            列印預約資料
+	            ">
+
+                                    列印
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 group_content print_area" id="result_ack" style="display: none;">
+                        <div class="result_area" style="display: none;">
+                            <div class="flex-center">
+                                <div class="success_value"><span class="ATH_NATCARDID"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_value"><span class="ATH_TEL_FOR_SMS_NOTIF"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_value"><span class="ATH_DEPART_DATE_PERIOD"></span></div>
+                            </div>
+                            <div class="flex-center">
+                                <div class="success_value"><span class="ATH_REF_NO"></span></div>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-12 group_content print_area" id="booking_reject">
+
+                    </div>
+
+
+                </div>
+
+
+                <script type="text/javascript" src="/booking/assets/js/application_hk.js"></script>
+
+
+            </div>
+        </article>
+    </main>
+    <footer>
+
+        <div class="container text-center">
+            <p class="cp text-center"></p>
+            <ul class="ft-list">
+                <li>2021 ©</li>
+                <li><a href="/booking/sitemap_tc.jsp" target="_blank">網頁指南</a></li>
+                <li><a href="/booking/privacy_tc.jsp" target="_blank">私隱政策</a></li>
+                <li><a href="/booking/contactus_tc.jsp" target="_blank">聯絡我們</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script type="text/javascript" src="/booking/assets/js/lib/plugins.js"></script>
+<script type="text/javascript" src="/booking/assets/js/main.js"></script>
+</body>
+</html>
+
+
