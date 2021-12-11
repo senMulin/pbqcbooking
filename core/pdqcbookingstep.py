@@ -1,7 +1,6 @@
 import logging
 import time
 from abc import ABC, abstractmethod
-from typing import Any, Optional
 from concurrent.futures import ThreadPoolExecutor
 from threading import RLock
 
