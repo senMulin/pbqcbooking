@@ -1,4 +1,18 @@
 import logging
+
+formatter = logging.Formatter(
+    fmt='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S')
+
+logger = logging.getLogger(__file__)
+logger.setLevel(logging.DEBUG)
+ch = logging.StreamHandler()
+ch.setFormatter(formatter)
+fh = logging.FileHandler("__file__" + ".log")
+fh.setFormatter(formatter)
+logger.addHandler(ch)
+logger.addHandler(fh)
+
 import threading
 import time
 from abc import ABC, abstractmethod
@@ -71,7 +85,7 @@ class StepOneHandler(AbstractHandler):
             self.browser.windows.current = win
             try:
                 # print("填充外傭身份證明文件類型")
-                logging.info(f"窗口:{win.index}，执行步骤一，线程ID:{threading.current_thread().ident}")
+                logger.info(f"窗口:{win.index}，执行步骤一，线程ID:{threading.current_thread().ident}")
 
                 while self.browser.is_element_not_present_by_id('step_1_other_documentId', .1):
                     continue
@@ -102,7 +116,7 @@ class StepOneHandler(AbstractHandler):
                                     self.browser.reload()
                                     wins[win.index] = (True, win)
                         except BaseException as ex:
-                            logging.error(f"步骤一回调执行异常，异常窗口:{win.index}, 异常：{ex}")
+                            logger.error(f"步骤一回调执行异常，异常窗口:{win.index}, 异常：{ex}")
                             with lock:
                                 self.browser.windows.current = win
                                 self.browser.reload()
@@ -125,7 +139,7 @@ class StepOneHandler(AbstractHandler):
                 f.add_done_callback(taskCallBack)
 
             except BaseException as e:
-                logging.error(f"步骤一执行异常，异常窗口:{win.index}, 异常：{e}")
+                logger.error(f"步骤一执行异常，异常窗口:{win.index}, 异常：{e}")
                 with lock:
                     self.browser.windows.current = win
                     self.browser.reload()
@@ -138,7 +152,7 @@ class StepTwoHandler(AbstractHandler):
         with lock:
             self.browser.windows.current = win
             try:
-                logging.info(f"窗口:{win.index}，执行步骤二，线程ID:{threading.current_thread().ident}")
+                logger.info(f"窗口:{win.index}，执行步骤二，线程ID:{threading.current_thread().ident}")
 
                 while self.browser.is_element_not_present_by_id('note_2_confirm', .1):
                     continue
@@ -149,7 +163,7 @@ class StepTwoHandler(AbstractHandler):
                                             "document.getElementById('note_2_confirm').click()")
 
             except BaseException as e:
-                logging.error(f"步骤二执行异常，异常窗口:{win.index}, 异常：{e}")
+                logger.error(f"步骤二执行异常，异常窗口:{win.index}, 异常：{e}")
                 with lock:
                     self.browser.windows.current = win
                     self.browser.reload()
@@ -164,7 +178,7 @@ class StepThreeHandler(AbstractHandler):
         with lock:
             self.browser.windows.current = win
             try:
-                logging.info(f"窗口:{win.index}，执行步骤三，线程ID:{threading.current_thread().ident}")
+                logger.info(f"窗口:{win.index}，执行步骤三，线程ID:{threading.current_thread().ident}")
                 while self.browser.is_element_not_present_by_id('step_2_form_control_confirm', 1):
                     continue
 
@@ -222,7 +236,7 @@ class StepThreeHandler(AbstractHandler):
                                     self.browser.reload()
                                     wins[win.index] = (True, win)
                         except BaseException as ex:
-                            logging.error(f"步骤三回调执行异常，异常窗口:{win.index}, 异常：{ex}")
+                            logger.error(f"步骤三回调执行异常，异常窗口:{win.index}, 异常：{ex}")
                             with lock:
                                 self.browser.windows.current = win
                                 self.browser.reload()
@@ -265,7 +279,7 @@ class StepThreeHandler(AbstractHandler):
                 f = pool.submit(helper.create_task)
                 f.add_done_callback(taskCallBack)
             except BaseException as e:
-                logging.error(f"步骤三执行异常，异常窗口:{win.index}, 异常：{e}")
+                logger.error(f"步骤三执行异常，异常窗口:{win.index}, 异常：{e}")
                 with lock:
                     self.browser.windows.current = win
                     self.browser.reload()
