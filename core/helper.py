@@ -8,7 +8,7 @@ import requests
 clientKey = "7ac506e45f275409e2b2e71bb7c6aa71048df1af1115"
 websiteKey = "6Lcmk0kcAAAAAG-dUsJJUbEOf2Ph2ZdGLMCojehi"
 websiteURL = "https://pbqc.quotabooking.gov.hk/"
-task_type = "RecaptchaV2EnterpriseTaskProxylessM1"
+task_type = "RecaptchaV2EnterpriseTaskProxyless"
 yescaptchaUrl = "hk.yescaptcha.com"
 
 data = {
