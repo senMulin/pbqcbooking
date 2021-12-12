@@ -40,7 +40,7 @@ bookingDate = "2021-12-25"
 ##日期是否开放（上线需填0）
 avalible_num = 1
 ##开放日期（上线需填 2021-12-13 09:00:00）
-avalible_date = '2021-12-13 09:00:00'
+avalible_date = '2021-12-12 09:00:00'
 
 futures = []
 pool = ThreadPoolExecutor(max_workers=16)
