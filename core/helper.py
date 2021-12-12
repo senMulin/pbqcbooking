@@ -9,7 +9,7 @@ clientKey = "7ac506e45f275409e2b2e71bb7c6aa71048df1af1115"
 websiteKey = "6Lcmk0kcAAAAAG-dUsJJUbEOf2Ph2ZdGLMCojehi"
 websiteURL = "https://pbqc.quotabooking.gov.hk/"
 task_type = "RecaptchaV2EnterpriseTaskProxyless"
-url = "https://api.yescaptcha.com/createTask"
+yescaptchaUrl = "https://hk.yescaptcha.com/createTask"
 
 data = {
     "clientKey": clientKey,
@@ -29,7 +29,7 @@ def create_task() -> str:
     # """
     try:
         # 发送JSON格式的数据
-        result = requests.post(url, json=data).json()
+        result = requests.post(yescaptchaUrl, json=data).json()
         taskId = result.get('taskId')
         if taskId is not None:
             return taskId
@@ -44,7 +44,7 @@ def get_response(taskID: str):
     times = 0
     while times < 120:
         try:
-            url = f"https://api.yescaptcha.com/getTaskResult"
+            url = f"https://{yescaptchaUrl}/getTaskResult"
             data = {
                 "clientKey": clientKey,
                 "taskId": taskID
