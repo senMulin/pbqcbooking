@@ -1,4 +1,6 @@
+import datetime
 import logging
+from operator import mod
 
 formatter = logging.Formatter(
     fmt='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
@@ -26,14 +28,20 @@ from splinter import Browser
 from core import helper
 
 url = 'https://pbqc.quotabooking.gov.hk/booking/hk/index_tc.jsp'
-##chrome 窗口数
+##chrome 窗口数（上线需填10）
 max_windows_size = 1
-##chrome 机器编号
+##chrome 机器编号（上线需根据机器填 ）
 machine_no = 1
+machine_size = 5
+
 CBP_ID = ''
-##预定日期
+##预定日期（上线需填 2022-01-03 ）
 bookingDate = "2021-12-25"
+##日期是否开放（上线需填1）
 avalible_num = 0
+##开放日期（上线需填 2021-12-13 09:00:00）
+avalible_date = '2021-12-13 09:00:00'
+
 futures = []
 pool = ThreadPoolExecutor(max_workers=16)
 lock = RLock()
@@ -231,6 +239,7 @@ class StepThreeHandler(AbstractHandler):
 
                 self.browser.find_by_id('step_2_form_control_confirm', 1).first.click()
                 user = self.user
+                browser = self.browser
 
                 def respCallback(resp):
                     with lock:
@@ -259,22 +268,22 @@ class StepThreeHandler(AbstractHandler):
                     times = 0
                     while times < 60:
                         with lock:
-                            self.browser.windows.current = win
-                            if self.browser.is_element_present_by_id('booking_result') and \
-                                    self.browser.find_by_id('booking_result', 1).first.visible:
-                                print(self.browser.find_by_id('booking_result', 1).first.html)
+                            browser.windows.current = win
+                            if browser.is_element_present_by_id('booking_result') and \
+                                    browser.find_by_id('booking_result', 1).first.visible:
+                                logging.info(f"执行结果:{browser.find_by_id('booking_result', 1).first.html}")
                                 break
-                            elif self.browser.is_element_present_by_xpath('//*[@class="reg_app"]') and \
-                                    self.browser.find_by_xpath('//*[@class="reg_app"]', 1).first.visible:
-                                print(self.browser.find_by_xpath('//*[@class="reg_app"]', 1).first.html)
+                            elif browser.is_element_present_by_xpath('//*[@class="reg_app"]') and \
+                                    browser.find_by_xpath('//*[@class="reg_app"]', 1).first.visible:
+                                logging.info("执行结果:" + browser.find_by_xpath('//*[@class="reg_app"]', 1).first.html)
                                 break
 
                         times += 3
                         time.sleep(2)
 
                     with lock:
-                        self.browser.windows.current = win
-                        self.browser.reload()
+                        browser.windows.current = win
+                        browser.reload()
                         wins[win.index] = (True, win)
 
                 def taskCallBack(resp):
@@ -307,9 +316,11 @@ class HandleChain(object):
         self.first = None
         self.browser = browser
         userList = []
+        n = 0
         for i, val in enumerate(users):
-            if i % machine_no == 0:
+            if i == (machine_no + n * 5):
                 userList.append(val)
+                n += 1
         self.users = userList
 
     def process(self):
@@ -323,6 +334,7 @@ class HandleChain(object):
             print("初始化窗口")
             wins[win.index] = (True, win)
 
+        d_time = datetime.datetime.strptime(f"{avalible_date}", '%Y-%m-%d %H:%M:%S')
         flag = True
         while flag:
             avalible_booking_periods = detect()
@@ -331,10 +343,20 @@ class HandleChain(object):
                 for avalible in avalible_booking_periods:
                     if avalible['CBP_START_DATE'] == bookingDate:
                         CBP_ID = avalible['CBP_ID']
-                    if avalible['value'] == avalible_num:
+                    if (avalible['value'] == avalible_num) or (datetime.datetime.now() > d_time):
                         flag = False
                 if not flag:
                     break
+            time.sleep(1)
+
+        while True:
+            # 范围时间
+            # 当前时间
+            n_time = datetime.datetime.now()
+
+            # 判断当前时间是否在范围时间内
+            if n_time > d_time:
+                break
 
         while True:
             for k, v in wins.items():
