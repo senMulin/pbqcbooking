@@ -35,7 +35,7 @@ machine_no = 0
 machine_size = 5
 
 CBP_ID = ''
-##预定日期（上线需填 2022-01-03 ）
+##预定日期（上线需填 2022-01-04 ）
 bookingDate = "2021-12-25"
 ##日期是否开放（上线需填0）
 avalible_num = 1
