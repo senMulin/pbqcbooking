@@ -227,6 +227,7 @@ class StepThreeHandler(AbstractHandler):
                 # print("強制檢疫開始日期")
                 flag = True
                 cbps = self.browser.find_by_name('step_2_CBP_ID', 1)
+
                 for cbp in cbps:
                     if self.user.step_1_documentId_Type == 'Indonesian Passport':
                         break
