@@ -31,14 +31,14 @@ url = 'https://pbqc.quotabooking.gov.hk/booking/hk/index_tc.jsp'
 ##chrome 窗口数（上线需填10）
 max_windows_size = 1
 ##chrome 机器编号（上线需根据机器填 ）
-machine_no = 1
+machine_no = 0
 machine_size = 5
 
 CBP_ID = ''
 ##预定日期（上线需填 2022-01-03 ）
 bookingDate = "2021-12-25"
-##日期是否开放（上线需填1）
-avalible_num = 0
+##日期是否开放（上线需填0）
+avalible_num = 1
 ##开放日期（上线需填 2021-12-13 09:00:00）
 avalible_date = '2021-12-13 09:00:00'
 
@@ -99,7 +99,8 @@ class StepOneHandler(AbstractHandler):
             self.browser.windows.current = win
             try:
                 # print("填充外傭身份證明文件類型")
-                logger.info(f"窗口:{win.index}，执行步骤一，线程ID:{threading.current_thread().ident}")
+                logger.info(f"窗口:{win.index}，执行步骤一，线程ID:{threading.current_thread().ident}, "
+                            f"用户:{self.user.step_2_fdh_name}")
 
                 while self.browser.is_element_not_present_by_id('step_1_other_documentId', .1):
                     continue
@@ -125,7 +126,7 @@ class StepOneHandler(AbstractHandler):
                                     self._next_handler.handle(win)
                             else:
                                 with lock:
-                                    print(f'窗口:{win.index},步骤一, 获取任务结果失败')
+                                    logger.error(f'窗口:{win.index},步骤一, 获取任务结果失败')
                                     self.browser.windows.current = win
                                     self.browser.reload()
                                     wins[win.index] = (True, win)
@@ -144,7 +145,7 @@ class StepOneHandler(AbstractHandler):
                         print(f'创建任务:{resp.result}')
                     else:
                         with lock:
-                            print(f'窗口:{win.index}, 创建任务失败')
+                            logger.error(f'窗口:{win.index}, 创建任务失败')
                             self.browser.windows.current = win
                             self.browser.reload()
                             wins[win.index] = (True, win)
@@ -166,8 +167,8 @@ class StepTwoHandler(AbstractHandler):
         with lock:
             self.browser.windows.current = win
             try:
-                logger.info(f"窗口:{win.index}，执行步骤二，线程ID:{threading.current_thread().ident}")
-
+                logger.info(f"窗口:{win.index}，执行步骤二，线程ID:{threading.current_thread().ident}, "
+                            f"用户:{self.user.step_2_fdh_name}")
                 while self.browser.is_element_not_present_by_id('note_2_confirm', .1):
                     continue
 
@@ -192,7 +193,8 @@ class StepThreeHandler(AbstractHandler):
         with lock:
             self.browser.windows.current = win
             try:
-                logger.info(f"窗口:{win.index}，执行步骤三，线程ID:{threading.current_thread().ident}")
+                logger.info(f"窗口:{win.index}，执行步骤三，线程ID:{threading.current_thread().ident},"
+                            f"用户:{self.user.step_2_fdh_name}")
                 while self.browser.is_element_not_present_by_id('step_2_form_control_confirm', 1):
                     continue
 
@@ -224,7 +226,7 @@ class StepThreeHandler(AbstractHandler):
 
                 # print("強制檢疫開始日期")
                 flag = True
-                cbps = self.browser.find_by_name('step_2_CBP_ID', 5)
+                cbps = self.browser.find_by_name('step_2_CBP_ID', 1)
                 for cbp in cbps:
                     if self.user.step_1_documentId_Type == 'Indonesian Passport':
                         break
@@ -251,10 +253,10 @@ class StepThreeHandler(AbstractHandler):
                                 while self.browser.is_element_not_present_by_value('確認', .1):
                                     continue
                                 self.browser.find_by_value('確認', 1).first.click()
-                                print(f"执行成功:{user.step_2_fdh_name}")
+                                logger.info(f"执行成功:{user.step_2_fdh_name}")
                             else:
                                 with lock:
-                                    print(f'窗口:{win.index}, 步骤三,获取任务结果失败')
+                                    logger.error(f'窗口:{win.index}, 步骤三,获取任务结果失败')
                                     self.browser.windows.current = win
                                     self.browser.reload()
                                     wins[win.index] = (True, win)
@@ -343,11 +345,15 @@ class HandleChain(object):
                 for avalible in avalible_booking_periods:
                     if avalible['CBP_START_DATE'] == bookingDate:
                         CBP_ID = avalible['CBP_ID']
-                    if (avalible['value'] == avalible_num) or (datetime.datetime.now() > d_time):
+                    if (avalible['value'] != avalible_num) or (datetime.datetime.now() > d_time):
                         flag = False
                 if not flag:
                     break
-            time.sleep(1)
+            if (d_time - datetime.datetime.now()).seconds > 5:
+                time.sleep(5)
+            else:
+                time.sleep(1)
+            print(f"检测接口，开放日期未到:{datetime.datetime.now()}")
 
         while True:
             # 范围时间
@@ -357,6 +363,12 @@ class HandleChain(object):
             # 判断当前时间是否在范围时间内
             if n_time > d_time:
                 break
+
+            if (d_time - datetime.datetime.now()).seconds > 10:
+                time.sleep(10)
+            else:
+                time.sleep(1)
+            print(f"开放日期未到:{n_time}")
 
         while True:
             for k, v in wins.items():
