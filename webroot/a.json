@@ -1,0 +1,292 @@
+{
+  "avalible_bookings": [
+    {
+      "destination": "PBQC",
+      "CBSP_ID": "28",
+      "reg_start_date": "2021-12-06 09:00",
+      "reg_end_date": "2021-12-13 07:59",
+      "booking_period_start_date": "2021-12-17 00:00",
+      "booking_period_end_date": "2021-12-30 23:59",
+      "avalible_booking_period": [
+        {
+          "CBP_ID": "108",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-17",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-17",
+          "value": 0
+        },
+        {
+          "CBP_ID": "109",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-18",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-18",
+          "value": 0
+        },
+        {
+          "CBP_ID": "110",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-19",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-19",
+          "value": 0
+        },
+        {
+          "CBP_ID": "111",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-20",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-20",
+          "value": 0
+        },
+        {
+          "CBP_ID": "112",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-21",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-21",
+          "value": 0
+        },
+        {
+          "CBP_ID": "113",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-22",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-22",
+          "value": 0
+        },
+        {
+          "CBP_ID": "114",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-23",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-23",
+          "value": 0
+        },
+        {
+          "CBP_ID": "115",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-24",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-24",
+          "value": 0
+        },
+        {
+          "CBP_ID": "116",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-25",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-25",
+          "value": 0
+        },
+        {
+          "CBP_ID": "117",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-26",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-26",
+          "value": 0
+        },
+        {
+          "CBP_ID": "118",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-27",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-27",
+          "value": 0
+        },
+        {
+          "CBP_ID": "119",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-28",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-28",
+          "value": 0
+        },
+        {
+          "CBP_ID": "120",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-29",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-29",
+          "value": 0
+        },
+        {
+          "CBP_ID": "121",
+          "CBSP_ID": "28",
+          "CBSP_LOCATION": "PBQC",
+          "CBP_START_DATE": "2021-12-30",
+          "CBP_CCP_ID": "2",
+          "CCP_ENG_NAME": "Penny's Bay Quarantine Centre",
+          "CCP_CHI_NAME": "竹篙灣檢疫中心",
+          "CCP_SCHI_NAME": "竹篙湾检疫中心",
+          "CBP_END_DATE": "2021-12-30",
+          "value": 0
+        }
+      ]
+    }
+  ],
+  "avalible_departure_from": [
+    {
+      "CDF_ID": 1,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "Philippines",
+      "CDF_CHI_NAME": "菲律賓",
+      "CDF_SCHI_NAME": "菲律宾"
+    },
+    {
+      "CDF_ID": 2,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "Indonesia",
+      "CDF_CHI_NAME": "印尼",
+      "CDF_SCHI_NAME": "印尼"
+    },
+    {
+      "CDF_ID": 13,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "India",
+      "CDF_CHI_NAME": "印度",
+      "CDF_SCHI_NAME": "印度"
+    },
+    {
+      "CDF_ID": 14,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "Malaysia",
+      "CDF_CHI_NAME": "馬來西亞",
+      "CDF_SCHI_NAME": "马来西亚"
+    },
+    {
+      "CDF_ID": 15,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "Pakistan",
+      "CDF_CHI_NAME": "巴基斯坦",
+      "CDF_SCHI_NAME": "巴基斯坦"
+    },
+    {
+      "CDF_ID": 16,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "Thailand",
+      "CDF_CHI_NAME": "泰國",
+      "CDF_SCHI_NAME": "泰国"
+    },
+    {
+      "CDF_ID": 17,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "Bangladeshi",
+      "CDF_CHI_NAME": "孟加拉",
+      "CDF_SCHI_NAME": "孟加拉"
+    },
+    {
+      "CDF_ID": 18,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "Nepalese",
+      "CDF_CHI_NAME": "尼泊爾",
+      "CDF_SCHI_NAME": "尼泊尔"
+    },
+    {
+      "CDF_ID": 19,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "Singapore",
+      "CDF_CHI_NAME": "新加坡",
+      "CDF_SCHI_NAME": "新加坡"
+    },
+    {
+      "CDF_ID": 20,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "HongKong",
+      "CDF_CHI_NAME": "香港",
+      "CDF_SCHI_NAME": "香港"
+    },
+    {
+      "CDF_ID": 21,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "UnitedArabEmirate",
+      "CDF_CHI_NAME": "阿拉伯聯合酋長國",
+      "CDF_SCHI_NAME": "阿拉伯联合酋长国"
+    },
+    {
+      "CDF_ID": 22,
+      "CDF_QUARANTINE_DURATION": 23,
+      "CDF_QUARANTINE_DURATION_CLEANING_DAY_COUNT": 2,
+      "CDF_CCP_ID": 2,
+      "CDF_ENG_NAME": "Other",
+      "CDF_CHI_NAME": "其他",
+      "CDF_SCHI_NAME": "其他"
+    }
+  ]
+}
