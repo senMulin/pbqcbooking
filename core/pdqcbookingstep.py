@@ -26,7 +26,13 @@ from splinter import Browser
 from core import helper
 
 url = 'https://pbqc.quotabooking.gov.hk/booking/hk/index_tc.jsp'
-max_windows_size = 5
+##chrome 窗口数
+max_windows_size = 1
+##chrome 机器编号
+machine_no = 1
+CBP_ID = ''
+##预定日期
+bookingDate = "2021-12-25"
 avalible_num = 0
 futures = []
 pool = ThreadPoolExecutor(max_workers=16)
@@ -207,13 +213,21 @@ class StepThreeHandler(AbstractHandler):
                     self.user.step_2_tel_for_sms_notif)
                 # 测试代码，使得某个开始日期可选
                 # todo
-                self.browser.execute_script("document.getElementById('booking_period_115').disabled='';")
+
                 # print("強制檢疫開始日期")
+                flag = True
                 cbps = self.browser.find_by_name('step_2_CBP_ID', 5)
                 for cbp in cbps:
+                    if self.user.step_1_documentId_Type == 'Indonesian Passport':
+                        break
                     if cbp.outer_html and cbp.outer_html.count('disable') <= 0:
                         cbp.click()
+                        flag = False
                         break
+
+                if flag:
+                    self.browser.execute_script(f"document.getElementById('booking_period_{CBP_ID}').disabled='';"
+                                                f"document.getElementById('booking_period_{CBP_ID}').checked = true;")
 
                 self.browser.find_by_id('step_2_form_control_confirm', 1).first.click()
                 user = self.user
@@ -292,7 +306,11 @@ class HandleChain(object):
         self.last = None
         self.first = None
         self.browser = browser
-        self.users = users
+        userList = []
+        for i, val in enumerate(users):
+            if i % machine_no == 0:
+                userList.append(val)
+        self.users = userList
 
     def process(self):
         for i in range(min(len(self.users), max_windows_size) - 1):
@@ -309,10 +327,14 @@ class HandleChain(object):
         while flag:
             avalible_booking_periods = detect()
             if avalible_booking_periods and len(avalible_booking_periods) > 0:
+                global CBP_ID
                 for avalible in avalible_booking_periods:
+                    if avalible['CBP_START_DATE'] == bookingDate:
+                        CBP_ID = avalible['CBP_ID']
                     if avalible['value'] == avalible_num:
                         flag = False
-                        break
+                if not flag:
+                    break
 
         while True:
             for k, v in wins.items():

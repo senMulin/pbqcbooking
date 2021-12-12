@@ -65,20 +65,8 @@ def get_response(taskID: str):
 
 
 def pathutil(fileName) -> str:
-    debug_vars = dict((a, b) for a, b in os.environ.items()
-                      if a.find('IPYTHONENABLE') >= 0)
-    # 根据不同场景获取根目录
-    if len(debug_vars) > 0:
-        """当前为debug运行时"""
-        rootPath = sys.path[2]
-    elif getattr(sys, 'frozen', False):
-        """当前为exe运行时"""
-        rootPath = os.getcwd()
-    else:
-        """正常执行"""
-        rootPath = sys.path[1]
-    # 替换斜杠
-    rootPath = rootPath.replace("\\", "/")
+    path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
     """按照文件名拼接资源文件路径"""
-    filePath = "%s/docs/%s" % (rootPath, fileName)
+    filePath = "%s/docs/%s" % (path, fileName)
+    print(filePath)
     return filePath
